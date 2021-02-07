@@ -24,6 +24,18 @@ public class CoreCompetency {
         return value;
     }
 
+    public String getValue() {
+        return value;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
