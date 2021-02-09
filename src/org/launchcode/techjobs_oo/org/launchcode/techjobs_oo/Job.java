@@ -1,4 +1,8 @@
 package org.launchcode.techjobs_oo;
+import org.launchcode.techjobs_oo.Employer;
+import org.launchcode.techjobs_oo.Location;
+import org.launchcode.techjobs_oo.PositionType;
+import org.launchcode.techjobs_oo.CoreCompetency;
 
 import java.util.Objects;
 
@@ -17,8 +21,8 @@ public class Job {
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
     public Job(){
-        this.id = nextId;
-        id++;
+        id = nextId;
+        nextId++;
     }
     public Job (String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency){
         this();
