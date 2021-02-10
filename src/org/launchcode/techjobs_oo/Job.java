@@ -95,4 +95,20 @@ public class Job {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    @Override
+    public String toString(){
+        if (name == null && employer == null && location == null && positionType == null && coreCompetency == null) {
+            return "OOPS! This job does not seem to exist.";
+
+        } else {
+            return
+                    "\n ID: " + getId() + "\n" +
+                            "Name: " + name + " \n" +
+                            "Employer: " + employer + " \n" +
+                            "Location: " + location + " \n" +
+                            "Position Type: " + positionType + " \n" +
+                            "Core Competency: " + coreCompetency + " \n";
+        }
+    }
 }
