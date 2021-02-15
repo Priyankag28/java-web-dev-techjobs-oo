@@ -27,7 +27,7 @@ private String value;
         this.value = value;
     }
     public String toString() {
-        if(value ==" "){
+        if(value == null || value == ""){
             return "Data not available";
         }else return value;
     }
